@@ -1,0 +1,1104 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    scroll-behavior: smooth;
+    overscroll-behavior-y: none;
+    font-style: normal;
+}
+
+body{
+    font-family: "Kelly Slab", sans-serif;
+
+        letter-spacing: 0.2rem;
+}
+
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+
+html{
+    overflow-x: hidden;
+    padding: 0;
+    margin: 0;
+    
+}
+
+
+html, body {
+    overflow-x: hidden;
+}
+
+
+:root{
+    --text-color: white;
+    --text-color-contrast: black;
+    --rect-color-khankot: rgb(11,19,30);
+    --butterfly-color: rgb(67, 42, 216);
+    --backgrounds-color: rgb(235,230,160);
+    --backgroundpics-color: rgb(27,25,26);
+    --animations-color: rgb(253,201,29);
+    --visualtopboxcolor: rgb(86,107,98);
+    --visualbottomboxcolor: rgb(33, 27, 0);
+    --lighttext-color: rgb(165,165,165);
+
+}
+
+
+.navbar{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    display: flex;
+
+    font-size: 1.4rem;
+    color: var(--text-color);
+
+    padding: 1rem 2% ;
+    justify-content: space-between;
+    align-content: center;
+
+    background-color: rgb(0, 0 0,3);
+    backdrop-filter: blur(8px);
+    /* -webkit-backdrop-filter: blur(12px); */
+}
+
+.navbar a{
+    font-size: clamp(0.3rem ,1vw,1.2rem);
+    color: var(--text-color);
+}
+
+.navbar a:hover{
+   transform:  scale(1.1);
+}
+
+.home{
+    background-color: black;
+    position: relative;
+    height: 62vw;
+    width: 100%; 
+
+}
+
+
+
+.homeimg{
+        position: absolute;
+        width: 100%;
+        height: auto;
+        display: block;
+
+        
+}
+
+.detectiveman{
+     position: absolute;
+     width: 100%;
+        height: auto;
+        display: block;
+}
+
+.redlines{
+     position: absolute;
+         width: 100%;
+        height: auto;
+        display: block;
+}
+
+
+
+.homeheader{
+     font-family: "Major Mono Display", monospace;
+    font-weight: 400;
+    color: var(--text-color);
+    position: absolute;
+    font-size: clamp(2rem, 8vw, 8rem);
+    top: 70%;
+    left: 3%;
+  
+}
+
+.homedescription{
+color: var(--text-color);
+    position: absolute;
+    font-size: clamp(1rem,3vw,3rem);
+    top: 85%;
+    right: 2%;
+}
+
+.about{
+    position: relative;
+}
+
+
+.aboutvid{
+    width: 100%;
+    height: auto;
+    display: block;
+
+}
+
+
+.abouttitle {
+    position: absolute;
+    top: 8%;
+    left: 0;
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* justify-content: space-around; */
+    /* gap: 5rem; */
+
+    color: var(--text-color);
+
+    
+}
+
+
+.abouttitle h1{
+    font-family: "Major Mono Display", monospace;
+    font-weight: 400;
+    letter-spacing: 0.5rem;
+    font-size: clamp(3rem,7vw,8rem);
+    text-align: center;
+  
+}
+
+
+/* #about1{
+    left: 10%;
+    top: 8%;
+}
+
+#about2{
+    right: 30%;
+    top: 8%;
+} */
+
+.aboutdescription1{
+
+    color: var(--text-color);
+    position: absolute;
+    font-size: clamp(0.5rem,2vw,1.7rem);
+    top: 35%;
+    left: 7%;
+    right: 65%;
+    /* line-height: 120%; */
+}
+
+.aboutdescription2{
+  
+    color: var(--text-color);
+    position: absolute;
+    font-size: clamp(0.5rem,2vw,1.7rem);
+    top: 38%;
+    left: 65%;
+    right: 7%;
+    text-align: right;
+    /* line-height: 120%; */
+}
+
+
+.aboutdescription1,
+.aboutdescription2 {
+    overflow-wrap:anywhere;
+       word-break: keep-all;}
+
+
+.illustrations{
+    position: relative;
+}
+
+
+.illustrationmasked {
+    position: relative;
+    height: 75vw;
+    background-color: black;
+    /* perspective: 100vw; */
+}
+
+.masked1{
+
+    position: absolute;
+    width: 100%;
+    height: auto;
+    display: grid;
+
+    
+}
+
+
+
+.masked2{
+     position: absolute;
+     z-index: 5;
+    width: 100%;
+    height: auto;
+    top: 0%;
+    
+
+
+}
+
+.masked3{
+     position: absolute;
+    width: 100%;
+    top: 0%;
+    height: auto;
+
+ 
+    
+
+}
+
+.illustrationstitle{
+    position: absolute;
+    top: 50%;
+    right: 2%;
+    color: var(--text-color);
+    font-size: clamp(2rem,7vw,8rem);
+     font-family: "Major Mono Display", monospace;
+    font-weight: 400;
+    mix-blend-mode: difference;
+
+    
+
+}
+
+
+.khankot{
+    position: relative;
+}
+
+
+
+.citybackground{
+    width: 100%;
+    height: auto;
+}
+
+.citybgtitle{
+    position: absolute;
+    top: 20%;
+    left: 45%;
+    color: var(--text-color);
+    position: absolute;
+    font-size: clamp(1rem,4vw,5rem);
+    
+    
+    
+}
+
+.khankottextdesc{
+  
+
+    color: var(--text-color);
+    position: absolute;
+    font-size: clamp(.5rem,2vw,2rem);
+    top: 40%;
+    left: 45%;
+}
+
+
+
+.khankotdesc{
+    position: relative;
+    background-color: var(--rect-color-khankot);
+    
+
+}
+
+.standingmanimg{
+    position: absolute;
+    width: 90%;
+    height: auto;
+    bottom:0%;
+    right: 0%;
+
+     
+    
+
+}
+
+.khankotbgimg{
+    
+    position: relative;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    top: 2%;
+    width: 40%;
+    left: 58%;
+    /* right: 5%; */
+
+}
+
+
+
+.graveimg{
+    position: absolute;
+    top: 3%;
+    width: 52%;
+    left: 2%;
+    height: auto;
+    
+
+
+}
+
+.deeperlook{
+    position: relative;
+    height: 57vw;
+}
+
+.deeperlookimg{
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+
+
+}
+
+
+
+
+.deeperlooktitle{
+    position: absolute;
+    color: var(--text-color);
+     font-family: "Major Mono Display", monospace;
+    font-weight: 400;
+    font-size: clamp(2rem, 8vw, 8rem);
+    margin-top: 20%;
+    right: 2%;
+
+}
+
+.butterfly{
+    position: relative;
+    height: 110vw;
+}
+
+.box{
+    position: absolute;
+    top: 5%;
+    width: 70%;
+    background-color: var(--butterfly-color);
+    /* margin-right: 30%; */
+    height: 100%;
+    /* margin-top: 5%; */
+}
+
+.butterflytitleX{
+    position: absolute;
+     white-space: nowrap;
+
+    top: 3%;
+    margin-left: 15%;
+    margin-right: 15%;
+    /* left: 20%;
+    right: 20%; */
+    
+
+    color: var(--butterfly-color);
+    font-family: "Major Mono Display", monospace;
+    font-weight: 400;
+    font-size: clamp(1.5rem, 5vw, 6rem);
+    mix-blend-mode: difference;
+
+}
+
+
+
+.butterflytitleY{
+    position: absolute;
+    left: 10%;
+    top:4%;
+    right: 99%;
+
+    color: var(--text-color-contrast);
+    font-weight: 400;
+    font-size: clamp(1rem,3vw,4rem);
+    letter-spacing: 0.5vw;
+   
+    writing-mode: vertical-rl;
+    text-orientation: upright;
+
+}
+
+
+.butterflyimg{
+    position: absolute;
+    top: 10%;
+    left: 30%;
+    width: 94%;
+           
+}
+
+.cupimg{
+    position: absolute;
+    width: 70%;
+    top: 55%;
+    left: 17%;
+         
+}
+
+.cuptitle{
+    position: absolute;
+     white-space: nowrap;
+
+    top: 95%;
+    left: 60%;
+    /* right: 20%; */
+    
+
+    color: var(--butterfly-color);
+    font-family: "Major Mono Display", monospace;
+    font-weight: 400;
+    font-size: 4vw;
+    /* letters */
+    mix-blend-mode: difference;
+}
+
+.paintedeyeimg{
+    position: absolute;
+    top: 60%;
+    left: 85%;
+    width: 45%;
+
+
+
+
+
+}
+
+
+.visuals{
+    position: relative;
+    height: 155vw;
+}
+
+.visualtopbox{
+    position: absolute;
+
+    top: 10%;
+    height: 90%;
+    width: 100%;
+    background-color: var(--visualtopboxcolor);
+    z-index: 0;
+       z-index: -2;
+}
+
+.visualbottombox{
+position: absolute;
+    top: 50%;
+    height: 60%;
+    width: 100%;
+    background-color: var(--visualbottomboxcolor);
+    z-index: -1;
+
+    clip-path: polygon(
+         0% 30%,
+        100% 0%,
+        100% 100%,
+        0% 100%
+    );
+}
+
+.visualtitle {
+    position: absolute;
+    top: 60%;
+    left: 35%;
+    
+    z-index: 10;
+
+    color: var(--text-color);
+    font-family: "Major Mono Display", monospace;
+    font-weight: 400;
+    font-size: 5vw;
+    writing-mode: vertical-rl;
+    text-orientation: upright;
+}
+
+
+.trainface{
+    position: absolute;
+    top:5%;
+    width: 70%;
+    left: 5%;
+    z-index: 2;
+}
+
+.yellowface{
+    position: absolute;
+    top: 40%;
+    width: 50%;
+    right: 3%;
+      z-index: 2;
+
+}
+
+.halffacebk{
+        position: absolute;
+    top: 52%;
+    width: 22%;
+    left: 10%;
+      z-index: 2;
+
+}
+
+.sparklevisual{
+    position: absolute;
+    top: 78%;
+    width: 10%;
+    right: 40%;
+      z-index: 3;
+}
+.arrowtofacevisual{
+    position: absolute;
+    z-index: 4;
+    top: 90%;
+    left: 50%;
+    width: 90%;
+    mix-blend-mode: difference;
+}
+.visualdetail{
+z-index: 4;
+position: absolute;
+left: 50%;
+right: 5%;
+top: 85%;
+color: var(--backgrounds-color);
+font-size: clamp(0.5rem,2vw,3rem);
+}
+
+.backgrounds{
+    /* top: 20%; */
+    position: relative;
+    height: 110vw;
+}
+
+
+
+.backgroundsimg{
+    /* top: 175vw; */
+    top: 0%;
+    position: absolute;
+    position: relative;
+    width: 100%;
+}
+
+.backgroundstitle{
+    position: absolute;
+    
+     white-space: nowrap;
+
+     /* top: 220vw; */
+     top: 17%;
+    left: 20%;
+
+     color: var(--backgrounds-color);
+    font-family: "Major Mono Display", monospace;
+    font-weight: 400;
+    font-size:7vw;
+}
+
+.backgroundpics{
+    position: relative;
+    height: 110vw;
+    width: 100%;
+    
+    
+}
+
+.bgbox{
+    position: absolute;
+    /* position: relative; */
+    top: 10%;
+    height: 75vw;
+    width: 100%;
+    background-color: var(--backgroundpics-color);
+
+}
+
+.mountainimg{
+    position: absolute;
+    width: 44%;
+    left: 3%;
+    top: 12%;
+}
+
+.homebgimg{
+
+    position: absolute;
+    width: 42%;
+    top: 53%;
+    left: 5%;
+    padding-bottom: 2%; 
+}
+
+.rocksimg{
+     position: absolute;
+    width: 48.5%;
+     top: 12%;
+    right: 3%
+
+}
+
+.fieldimg{
+
+    position: absolute;
+    width: 96%;
+    top: 80%;
+    left: 2%;
+    /* padding-bottom: 2%; */
+
+}
+
+.dooropenimg{
+
+    position: absolute;
+    width: 96%;
+    top: 120%;
+    left: 2%;
+    /* padding-bottom: 2%; */
+
+
+}
+
+.buildingblueimg{
+
+    position: absolute;
+    width: 55%;
+    top: 170%;
+    right: 2%;
+
+
+
+}
+
+.carimgbg{
+
+    position: absolute;
+    width: 45%;
+    top: 145%;
+    left: 5%;
+
+
+
+}
+
+.doorimg{
+
+    position: absolute;
+    width: 35%;
+    top: 205%;
+    left: 5%;
+}
+
+.bgtext{
+        position: absolute;
+
+    top: 175%;
+    color: var(--text-color-contrast);
+
+    font-size: clamp(1rem,2vw,3rem);
+    right: 70%;
+    left: 5%;
+}
+
+.animations{
+    position: relative;
+    /* height: auto; */
+    height: 190vw;
+    width: 100%;
+}
+
+.animationsimg{
+    position: absolute;
+    /* position: relative; */
+    top: 80%;
+
+    width: 100%;
+    height: auto;
+}
+
+.animationsketchimg{
+    position: absolute;
+    /* position: relative; */
+    top: 80%;
+
+    width: 100%;
+    height: auto;
+}
+
+.animationstitle{
+    position: absolute;
+    top: 105%;
+
+    font-family: "Major Mono Display", monospace;
+    font-weight: 400;
+    color: var(--animations-color);
+
+    font-size: clamp(2rem,7vw,8rem);
+    right: 5%;
+
+    
+}
+
+
+
+
+
+.animationworkflow{
+    position: relative;
+    width: 100%;
+    height: 300vw;
+}
+
+
+.workflowtitle{
+    position: absolute;
+    font-size:clamp(1rem,3vw,3rem) ;
+    left: 8%;
+    top: 21%;
+
+
+}
+
+.characterdescription{
+    position: absolute;
+    font-size:clamp(0.8rem,2vw,3rem) ;
+    left: 7%;
+    top: 35%;
+}
+
+.charactersideviewimg{
+    position: absolute;
+    width: 9.5%;
+    top: 24%;
+    left: 7%;
+
+}
+
+.characterfrontviewimg{
+    position: absolute;
+    width: 13%;
+    top: 24%;
+    left: 18%;
+
+}
+
+.characterturnaroundimg{
+     position: absolute;
+    width: 63%;
+    top: 22%;
+    right: 5%;
+}
+
+.storyboardtitle{
+     position: absolute;
+    font-size:clamp(1rem,3vw,4rem) ;
+     top: 39%;
+     left: 7%;
+
+}
+
+.turnaroudparagraph{
+    position: absolute;
+    font-size:clamp(0.5rem,2vw,3rem) ;
+    left: 7%;
+    top: 26%;
+}
+
+.arrowimg{
+    position: absolute;
+    left: 28%;
+    top: 33.5%;
+    width: 8%;
+    /* transform: rotate(-20deg); */
+}
+
+.storyboardimg{
+    position: absolute;
+    width: 50%;
+    left: 5%;
+    top: 41%;
+
+}
+
+.backgroundstitleanimation{
+     position: absolute;
+    font-size:clamp(1rem,3vw,4rem) ;
+    top: 36%;
+    right: 7%;
+
+}
+
+.doorfrontimg{
+    position: absolute;
+    width: 30%;
+    top: 38%;
+    right: 7%;
+}
+
+.buildingimg{
+   position: absolute;
+    width: 40%;
+    top: 46%;
+    right: 3%;
+}
+
+.doorgroundviewimg{
+    position: absolute;
+    width: 45%;
+    top: 58%;
+    left: 7%;
+
+}
+
+.doorknobimg{
+    position: absolute;
+    width: 35%;
+    top: 62%;
+    right: 7%;
+}
+
+
+.sidebuilding1img{
+     position: absolute;
+    width: 6%;
+    top: 70.5%;
+    right: 40%;
+}
+
+.sidebuilding2img{
+    position: absolute;
+    width: 6.5%;
+    top: 68%;
+    right: 55%;
+}
+
+.doorsidewayimg{
+    position: absolute;
+    width: 20%;
+    top: 70%;
+    right: 7%;
+}
+
+.carimg{
+    position: absolute;
+    width: 45%;
+    top: 55%;
+    left: 5%;
+}
+
+.bookmarks{
+    position: relative;
+    height:80vw;
+    width: 100%;
+
+}
+
+.bookmarksimg{
+    position: absolute;
+    width: 100%;
+    top: -70%;
+}
+
+.bookmarkstitle{
+font-family: "Major Mono Display", monospace;
+    font-weight: 400;
+    color: var(--text-color-contrast);
+    position: absolute;
+    font-size: clamp(3rem, 8vw, 9rem);
+
+    width: 100%;
+    top: 2%;
+    left: 0;
+    text-align: center;
+   
+}
+
+.bookmarksimages{
+    position: relative;
+    height: 70vw;
+}
+
+.paperbgimg{
+        z-index: -1;
+    position: absolute;
+    height: 255%;
+    left: 0%;
+
+    /* width: 100%; */
+}
+/* .container {
+    padding: 4rem 2%;
+
+    position: absolute;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+} */
+
+
+
+ .moonimg{
+    position: absolute;
+ width:     17%;
+    top: 15%;
+    left: 10%;
+  
+
+
+}
+
+.hamletimg{
+    position: absolute;
+ width:     15%;
+        top: 15%;
+    left: 32%;
+
+}
+
+.skeletonimg{
+    position: absolute;
+ width:     15%;
+     top: 15%;
+    right: 30%;
+
+}
+
+.libraryimg{
+    position: absolute;
+ width:     14%;
+    top: 13%;
+    right: 10%;
+}
+
+.girlbackpackimg{
+    position: absolute;
+    width: 15%;
+       top: 90%;
+    left: 9%;
+}
+
+.handflowerimg{
+   position: absolute;
+    width: 19.5%;
+     top: 90%;
+    left: 28%;
+
+}
+
+.girlfieldyellowimg{
+   position: absolute;
+    width: 16%;
+     top: 90%;
+    right: 32%;
+}
+
+.girlfieldblue{
+   position: absolute;
+    width: 20%;
+     top: 90%;
+    right: 7%;
+}
+
+.floralimg{
+   position: absolute;
+    width: 12%;
+    top: 165%;
+    left: 7%;
+    
+}
+
+.hillhouse{
+   position: absolute;
+    width: 12%;
+    top: 165%;
+    left: 25%;
+}
+
+.lemonimg{
+   position: absolute;
+    width: 25%;
+    top: 165%;
+    right: 35%;
+}
+
+.skyimg{
+   position: absolute;
+
+    width: 25%;
+    top: 165%;
+    right: 5%;
+} 
+
+.contact{
+    height: 160vw;
+    width: 100%;
+    position: relative;
+}
+
+.contactbox{
+    position: absolute;
+    top: 55%;
+    width: 100%;
+    height: 80vw;
+    background-color: black;
+
+
+}
+
+.contactskullimg{
+    position: absolute;
+    width: 53%;
+    top: 55%;
+       left: 50%;
+    transform: translateX(-50%);
+
+}
+
+.contacttitle{
+    position: absolute;
+    font-size: clamp(1.5rem,3.5vw,4.5rem);
+    color: var(--text-color);
+    width: 100%;
+left: 0;
+text-align: center;
+    bottom: 10%;
+    letter-spacing: 1.5vw;
+  
+}
+
+.contactsbox {
+    position: absolute;
+    width: 100%;
+    left: 0;
+
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+
+    text-align: center;
+    gap: 1rem;
+    padding: 2rem 2%;
+     font-size:   clamp(.25rem,1vw,2rem);
+     color: var(--lighttext-color);
+     
+       bottom: 4%;
+}
+
+.contactitem,
+.contactitem h2,
+.contactitem h3 {
+    color: var(--lighttext-color);
+    text-decoration: none;
+}
