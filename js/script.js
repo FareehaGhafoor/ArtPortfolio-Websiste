@@ -127,7 +127,7 @@ gsap.from(
 gsap.to(".masked1", {
     y: -10,
     rotation: 2,
-    scale: 1.1,
+    scale: 1.3,
 
     scrollTrigger: {
         trigger: ".illustrations",
