@@ -5,14 +5,18 @@ gsap.registerPlugin(ScrollTrigger, SplitText);
 
 const mm = gsap.matchMedia();
 
-const lenis = new Lenis({
+mm.add("(min-width: 768px)", () => {
+
+    const lenis = new Lenis({
         lerp: 0.15
-});
+    });
 
-lenis.on("scroll", ScrollTrigger.update);
+    lenis.on("scroll", ScrollTrigger.update);
 
-gsap.ticker.add((time) => {
-  lenis.raf(time * 1000); // Convert time from seconds to milliseconds
+    gsap.ticker.add((time) => {
+        lenis.raf(time * 1000);
+    });
+
 });
 
 gsap.ticker.lagSmoothing(0);
