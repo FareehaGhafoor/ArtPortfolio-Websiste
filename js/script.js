@@ -491,6 +491,21 @@ gsap.from(".doorknobimg", {
     }
     
 });
+
+
+gsap.from(".arrowimg", {
+    y: -10,
+    // scale: 1.1,
+       opacity:0,
+    // rotation: -2,
+     scrollTrigger: {
+        trigger:".arrowimg",
+        scrub: true,
+        start: "top 80%",
+        end: "top 65%"
+    }
+});
+
     //titles
 
 
@@ -556,18 +571,6 @@ gsap.from(".standingmanimg", {
 
 // arrowimg
 
-gsap.from(".arrowimg", {
-    y: -10,
-    // scale: 1.1,
-       opacity:0,
-    // rotation: -2,
-     scrollTrigger: {
-        trigger:".arrowimg",
-        scrub: true,
-        start: "top 80%",
-        end: "top 65%"
-    }
-});
 
 
 

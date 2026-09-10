@@ -185,7 +185,7 @@ color: var(--text-color);
 
     color: var(--text-color);
     position: absolute;
-    font-size: clamp(0.5rem,2vw,1.7rem);
+    font-size: clamp(0.65rem,1.55vw,2rem);
     top: 35%;
     left: 7%;
     right: 65%;
@@ -197,7 +197,7 @@ color: var(--text-color);
   
     color: var(--text-color);
     position: absolute;
-    font-size: clamp(0.5rem,2vw,1.7rem);
+    font-size: clamp(0.65rem,1.55vw,2rem);
     top: 38%;
     left: 65%;
     right: 7%;
