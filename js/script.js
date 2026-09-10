@@ -5,7 +5,7 @@ gsap.registerPlugin(ScrollTrigger, SplitText);
 
 const mm = gsap.matchMedia();
 
-mm.add("(min-width: 768px)", () => {
+mm.add("(min-width: 769px)", () => {
 
     const lenis = new Lenis({
         lerp: 0.15
@@ -359,19 +359,7 @@ gsap.from(".doorimg", {
     
 });
 
-gsap.to(".animationsketchimg", {
-    // y: 70,
-    // scale: 1.1,
-       opacity:0,
-    // rotation: -2,
-     scrollTrigger: {
-        trigger:".animationsketchimg",
-        scrub: true,
-        start: "top 15%",
-        end: "top 0%"
-    }
-    
-});
+
 
 
 gsap.from(".charactersideviewimg", {
@@ -536,42 +524,19 @@ gsap.from(".standingmanimg", {
 
 
 
-
-
-// gsap.from(".carimg, .doorsidewayimg", {
-//     y: 70,
-//     // scale: 1.1,
-//        opacity:0,
-//     // rotation: -2,
-//      scrollTrigger: {
-//         trigger:".carimg",
-//         scrub: true,
-//         start: "top 60%",
-//         end: "top 20%"
-//     }
+gsap.to(".animationsketchimg", {
+    // y: 70,
+    // scale: 1.1,
+       opacity:0,
+    // rotation: -2,
+     scrollTrigger: {
+        trigger:".animationsketchimg",
+        scrub: true,
+        start: "top 25%",
+        end: "top 0%"
+    }
     
-// });
-
-// gsap.from(".sidebuilding1img, .sidebuilding2img", {
-//     y: 70,
-//     // scale: 1.1,
-//        opacity:0,
-//     // rotation: -2,
-//      scrollTrigger: {
-//         trigger:".carimg",
-//         scrub: true,
-//         start: "top 60%",
-//         end: "top 20%"
-//     }
-    
-// });
-
-
-// doorknobimg
-
-// arrowimg
-
-
+});
 
 
 // TITLES//////////

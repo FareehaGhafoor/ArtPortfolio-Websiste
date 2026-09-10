@@ -3,7 +3,7 @@
     padding: 0;
     box-sizing: border-box;
     text-decoration: none;
-    scroll-behavior: smooth;
+
     /* overscroll-behavior-y: none; */
     font-style: normal;
 }
@@ -23,7 +23,7 @@ body{
 html{
     padding: 0;
     margin: 0;
-    
+        scroll-behavior: smooth;
 }
 
 
@@ -55,7 +55,7 @@ html, body {
     z-index: 1000;
     display: flex;
 
-    font-size: 1.4rem;
+    font-size: clamp(0.2rem,1vw,2rem);
     color: var(--text-color);
 
     padding: 1rem 2% ;
@@ -185,9 +185,9 @@ color: var(--text-color);
 
     color: var(--text-color);
     position: absolute;
-    font-size: clamp(0.65rem,1.55vw,2rem);
-    top: 35%;
-    left: 7%;
+    font-size: clamp(0.25rem,1.5vw,2rem);
+    top: 30%;
+    left: 4%;
     right: 65%;
 
     /* line-height: 120%; */
@@ -197,10 +197,10 @@ color: var(--text-color);
   
     color: var(--text-color);
     position: absolute;
-    font-size: clamp(0.65rem,1.55vw,2rem);
-    top: 38%;
+    font-size: clamp(0.25rem,1.5vw,2rem);
+    top: 30%;
     left: 65%;
-    right: 7%;
+    right: 4%;
     text-align: right;
     /* line-height: 120%; */
 }
@@ -493,7 +493,7 @@ color: var(--text-color);
 
          font-family: "Major Mono Display", monospace;
     font-weight: 400;
-        font-size: clamp(0.8rem,2.5vw,3rem);  
+        font-size: clamp(0.5rem,2.5vw,3rem);  
 }
 
 .bluesectionbox{
@@ -823,10 +823,10 @@ font-size: clamp(0.5rem,2vw,3rem);
     left: 4%;
     top: 89%;
 
-    color: var(--text-color);
-    font-family: "Major Mono Display", monospace;
+    color: rgb(219, 214, 208);
+    /* font-family: "Major Mono Display", monospace; */
     font-weight: 400;
-    font-size: clamp(1.5rem, 4vw, 5rem);
+    font-size: clamp(0.7rem, 3vw, 4rem);
 }
 
 .animationreel{
@@ -849,7 +849,7 @@ font-size: clamp(0.5rem,2vw,3rem);
 
 .workflowtitle{
     position: absolute;
-    font-size:clamp(1rem,3vw,3rem) ;
+    font-size:clamp(0.5rem,3vw,3rem) ;
     left: 8%;
     top: 21%;
 
@@ -858,7 +858,7 @@ font-size: clamp(0.5rem,2vw,3rem);
 
 .characterdescription{
     position: absolute;
-    font-size:clamp(0.8rem,2vw,3rem) ;
+    font-size:clamp(0.5rem,2vw,3rem) ;
     left: 7%;
     top: 35%;
 }
@@ -1001,7 +1001,7 @@ font-family: "Major Mono Display", monospace;
     font-weight: 400;
     color: var(--text-color-contrast);
     position: absolute;
-    font-size: clamp(3rem, 8vw, 9rem);
+    font-size: clamp(2.5rem, 8vw, 9rem);
 
     width: 100%;
     top: 2%;
