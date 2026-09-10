@@ -5,7 +5,6 @@ gsap.registerPlugin(ScrollTrigger, SplitText);
 
 const mm = gsap.matchMedia();
 
-mm.add("(min-width: 769px)", () => {
 
     const lenis = new Lenis({
         lerp: 0.15
@@ -17,7 +16,7 @@ mm.add("(min-width: 769px)", () => {
         lenis.raf(time * 1000);
     });
 
-});
+
 
 gsap.ticker.lagSmoothing(0);
 
@@ -90,7 +89,7 @@ const animationreelTitle = new SplitText(".animationreeltitle", {type: "chars"})
 
 
 
-mm.add("(min-width: 768px", () =>{
+mm.add("(min-width: 768px)", () =>{
     //desktop 
 
 // homeimg
