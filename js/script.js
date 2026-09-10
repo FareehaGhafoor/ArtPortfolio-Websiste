@@ -50,6 +50,17 @@ const cuptitle = new SplitText(".cuptitle", {
     type: "chars"
 });
 
+const iantitle = new SplitText(".iantitle", {
+    type: "chars"
+});
+
+const fireworktitle = new SplitText(".fireworkgirltitLe", {
+    type: "chars"
+});
+const traingirltitle = new SplitText(".traingirltitle", {
+    type: "chars"
+});
+
 
 const visualTitle = new SplitText(".visualtitle", {type: "chars"});
 const visualDetail = new SplitText(".visualdetail", {type: "chars"});
@@ -69,7 +80,7 @@ const bookmarksTitle = new SplitText(".bookmarkstitle", {type: "chars"});
 const contactTitle = new SplitText(".contacttitle", {type: "chars"});
 const contactItems = new SplitText(".contactitem h2, .contactitem h3", {type: "chars"});
 
-
+const animationreelTitle = new SplitText(".animationreeltitle", {type: "chars"});
 
 
 // homeimg
@@ -138,7 +149,7 @@ gsap.to(".masked1", {
 gsap.to(".masked2", {
     y: -80,
     rotation:-2,
-    scale: 1.25,
+    scale: 1.5,
 
     scrollTrigger: {
         trigger: ".illustrations",
@@ -211,8 +222,93 @@ gsap.from(".paintedeyeimg", {
 });
 
 
+// gsap.from(".fireworkgirlimg", {
+//     y: 40,
+//     // scale: 1.1,
+//     //    opacity:0,
+//     // rotation: -2,
+//      scrollTrigger: {
+//         trigger:".fireworkgirlimg",
+//         scrub: true,
+//         start: "top 60%",
+//         end: "top 10%"
+//     }
+// });
+
+// gsap.to(".fireworkgirlimg", {
+//     x: -40,
+//     // scale: 1.1,
+//        opacity:0,
+//     // rotation: -2,
+//      scrollTrigger: {
+//         trigger:".fireworkgirlimg",
+//         scrub: true,
+//         start: "top 2%",
+//         // end: "top 5%"
+//     }
+// });
+
+// gsap.from(" .fireworkbluever ", {
+//     y: 40,
+//     // scale: 1.5,
+//        opacity:0,
+//     // rotation: -2,
+//     stagger: 1,
+//     duration:2,
+//      scrollTrigger: {
+//         trigger:".fireworkbluever",
+//         scrub: true,
+// //         start: "top 85%",
+// //         end: "top 28%"
+// //     }
+// // });
+
+// gsap.from(".fireworkogver", {
+//     x: 40,
+//     // scale: 0.9,
+//        opacity:0,
+//     // rotation: -2,
+//     // stagger: 1,
+//     duration:0.15,
+//      scrollTrigger: {
+//         trigger:".fireworkogver",
+//         scrub: true,
+//         start: "top 85%",
+//         end: "top 50%"
+//     }
+// });
+
+// gsap.from(".fireworkfishver", {
+//     x: 50,
+//     // scale: 1.5,
+//        opacity:0,
+//     // rotation: -2,
+//     stagger: 1,
+//     duration:2,
+//      scrollTrigger: {
+//         trigger:".fireworkfishver",
+//         scrub: true,
+//         start: "top 85%",
+//         end: "top 55%"
+//     }
+// });
+
+
+// gsap.from(".ianimg", {
+//     y: 10,
+//     // scale: 1.1,
+//        opacity:0,
+//     // rotation: -2,
+//      scrollTrigger: {
+//         trigger:".ianimg",
+//         scrub: true,
+//         start: "top 90%",
+//         end: "top 80%"
+//     }
+// });
+
 gsap.from(".trainface", {
-    y: 90,
+    y: 70,
     // scale: 1.1,
     //    opacity:0,
     // rotation: -2,
@@ -478,33 +574,33 @@ gsap.from(".doorknobimg", {
     
 });
 
-gsap.from(".carimg, .doorsidewayimg", {
-    y: 70,
-    // scale: 1.1,
-       opacity:0,
-    // rotation: -2,
-     scrollTrigger: {
-        trigger:".carimg",
-        scrub: true,
-        start: "top 60%",
-        end: "top 20%"
-    }
+// gsap.from(".carimg, .doorsidewayimg", {
+//     y: 70,
+//     // scale: 1.1,
+//        opacity:0,
+//     // rotation: -2,
+//      scrollTrigger: {
+//         trigger:".carimg",
+//         scrub: true,
+//         start: "top 60%",
+//         end: "top 20%"
+//     }
     
-});
+// });
 
-gsap.from(".sidebuilding1img, .sidebuilding2img", {
-    y: 70,
-    // scale: 1.1,
-       opacity:0,
-    // rotation: -2,
-     scrollTrigger: {
-        trigger:".carimg",
-        scrub: true,
-        start: "top 60%",
-        end: "top 20%"
-    }
+// gsap.from(".sidebuilding1img, .sidebuilding2img", {
+//     y: 70,
+//     // scale: 1.1,
+//        opacity:0,
+//     // rotation: -2,
+//      scrollTrigger: {
+//         trigger:".carimg",
+//         scrub: true,
+//         start: "top 60%",
+//         end: "top 20%"
+//     }
     
-});
+// });
 
 
 // doorknobimg
@@ -523,6 +619,7 @@ gsap.from(".arrowimg", {
         end: "top 65%"
     }
 });
+
 
 
 // TITLES//////////
@@ -704,6 +801,49 @@ gsap.from(cuptitle.chars, {
     }
 });
 
+gsap.from(iantitle.chars, {
+    x: -10,
+    opacity: 0,
+    scale: 1.1,
+    duration: 1.15,
+        stagger: 0.01,
+
+    scrollTrigger: {
+        trigger: ".iantitle",
+        start: "top 100%",
+         end: "top 75%",
+        scrub: true,
+    }
+});
+
+// gsap.from(fireworktitle.chars, {
+//     y: -50,
+//     opacity: 0,
+//     scale: 1.1,
+//     duration: 1.15,
+//         stagger: 0.04,
+
+//     scrollTrigger: {
+//         trigger: ".fireworkgirlimg",
+//         start: "top 80%",
+//          end: "top 40%",
+//         scrub: true,
+//     }
+// });
+
+gsap.from(traingirltitle.chars, {
+    x: 120,
+    opacity: 0,
+    stagger: 0.04,
+    duration: 1,
+
+    scrollTrigger: {
+     trigger: ".traingirltitle",
+        start: "top 80%",
+        end: "top 60%",
+        scrub: true
+    }
+});
 
 gsap.from(visualTitle.chars, {
     x: 120,
@@ -775,6 +915,22 @@ gsap.from(animationsTitle.chars, {
     }
 });
 
+
+gsap.from(animationreelTitle.chars, {
+     x: -50,
+    opacity: 0,
+    duration: 0.6,
+    ease: "power2.out",
+    stagger: 0.01,
+
+    scrollTrigger: {
+        trigger: ".animationreeltitle",
+         start: "top 100%",
+        end: "top 40%",
+             scrub: true
+    }
+});
+
 gsap.from(workflowTitle.words, {
      x: -60,
     opacity: 0,
@@ -839,8 +995,8 @@ gsap.from(contactTitle.chars, {
 
     scrollTrigger: {
         trigger: ".contacttitle",
-        start: "top 80%",
-        end: "top 45%",
+        start: "top 90%",
+        end: "top 70%",
         // scrub: true
     }
 });
@@ -848,13 +1004,13 @@ gsap.from(contactTitle.chars, {
 gsap.from(contactItems.chars, {
     y: 40,
     opacity: 0,
-    stagger: 0.02,
-    duration: 1,
+    stagger: 0.01,
+    duration: 0.5,
 
     scrollTrigger: {
         trigger: ".contactsbox",
-        start: "top 80%",
-        end: "top 50%",
+        // start: "top 80%",
+        end: "top 60%",
         // scrub: true
     }
 });

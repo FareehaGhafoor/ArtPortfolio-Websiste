@@ -4,7 +4,7 @@
     box-sizing: border-box;
     text-decoration: none;
     scroll-behavior: smooth;
-    overscroll-behavior-y: none;
+    /* overscroll-behavior-y: none; */
     font-style: normal;
 }
 
@@ -21,7 +21,6 @@ body{
 
 
 html{
-    overflow-x: hidden;
     padding: 0;
     margin: 0;
     
@@ -41,7 +40,7 @@ html, body {
     --backgrounds-color: rgb(235,230,160);
     --backgroundpics-color: rgb(27,25,26);
     --animations-color: rgb(253,201,29);
-    --visualtopboxcolor: rgb(86,107,98);
+    --visualtopboxcolor: rgb(73, 81, 68);
     --visualbottomboxcolor: rgb(33, 27, 0);
     --lighttext-color: rgb(165,165,165);
 
@@ -453,7 +452,7 @@ color: var(--text-color);
     position: absolute;
      white-space: nowrap;
 
-    top: 95%;
+    top: 92%;
     left: 60%;
     /* right: 20%; */
     
@@ -477,7 +476,39 @@ color: var(--text-color);
 
 
 }
+.iansection{
+    position: relative;
+    height: 90vw;
+}
 
+.ianimg{
+    position: absolute;
+    top: 12%;
+    /* right: 1%; */
+    width: 100%;
+    /* height: 40%; */
+}
+
+.iantitle{
+        position: absolute;
+        top: 100%;
+        color: var(--text-color);
+        left: 7%;
+
+         font-family: "Major Mono Display", monospace;
+    font-weight: 400;
+        font-size: clamp(0.8rem,2.5vw,3rem);  
+}
+
+.bluesectionbox{
+    position: absolute;
+    top: 2%;
+    height: 150%;
+    width: 100%;
+    background-color: rgb(17, 16, 25) ;
+    
+    z-index: -2;
+}
 
 .visuals{
     position: relative;
@@ -487,12 +518,18 @@ color: var(--text-color);
 .visualtopbox{
     position: absolute;
 
-    top: 10%;
+    top: 0%;
     height: 90%;
     width: 100%;
-    background-color: var(--visualtopboxcolor);
-    z-index: 0;
+    background-color:var(--visualtopboxcolor);
+    /* z-index: 0; */
        z-index: -2;
+         clip-path: polygon(
+         0% 20%,
+        100% 5%,
+        100% 100%,
+        0% 100%
+    );
 }
 
 .visualbottombox{
@@ -531,13 +568,26 @@ position: absolute;
     position: absolute;
     top:5%;
     width: 70%;
-    left: 5%;
+    left: 2%;
     z-index: 2;
+}
+
+.traingirltitle{
+      position: absolute;
+    top:10%;
+    padding-right: 4%;
+    left: 75%;
+    color: rgb(174, 198, 199);
+        font-family: "Major Mono Display", monospace;
+    font-weight: 400;
+       font-size: 3.8vw
+ 
+
 }
 
 .yellowface{
     position: absolute;
-    top: 40%;
+    top: 37%;
     width: 50%;
     right: 3%;
       z-index: 2;
@@ -752,6 +802,44 @@ font-size: clamp(0.5rem,2vw,3rem);
     
 }
 
+
+.animationsvedio{
+    position: relative;
+    width: 100%;
+    /* top: 90%; */
+    height: 70vw;
+    /* background-color: black; */
+}
+
+
+.animationbox{
+        position: absolute;
+    top: 82%;
+    width: 100%;
+    height: 72vw;
+    background-color: rgb(14, 13, 16);
+       z-index: 0;
+}
+
+.animationreeltitle{
+     position: absolute;
+
+    left: 4%;
+    top: 89%;
+
+    color: var(--text-color);
+    font-family: "Major Mono Display", monospace;
+    font-weight: 400;
+    font-size: clamp(1.5rem, 4vw, 5rem);
+}
+
+.animationreel{
+    position: absolute;
+    top: 100%;
+    width: 96%;
+    left: 2%;
+       z-index: 1;
+}
 
 
 
@@ -1040,7 +1128,9 @@ font-family: "Major Mono Display", monospace;
     width: 25%;
     top: 165%;
     right: 5%;
-} 
+}
+
+
 
 .contact{
     height: 160vw;
@@ -1093,7 +1183,7 @@ text-align: center;
      font-size:   clamp(.25rem,1vw,2rem);
      color: var(--lighttext-color);
      
-       bottom: 4%;
+       bottom: 2%;
 }
 
 .contactitem,
