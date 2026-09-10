@@ -3,6 +3,8 @@ console.log("JS IS RUNNING");
 console.log(document.querySelector(".masked1"));
 gsap.registerPlugin(ScrollTrigger, SplitText);
 
+const mm = gsap.matchMedia();
+
 const lenis = new Lenis({
         lerp: 0.15
 });
@@ -18,10 +20,10 @@ gsap.ticker.lagSmoothing(0);
 
 //texts
 const homeTitle = new SplitText(".homeheader", { type: "chars" });
-const homeDescription = new SplitText(".homedescription", { type: "chars" });
+const homeDescription = new SplitText(".homedescription", { type: "words" });
 
 const aboutTitle = new SplitText(".abouttitle", {type: "chars"});
-const aboutdesc = new SplitText(".aboutdescription1, .aboutdescription2", {type: "chars"});
+const aboutdesc = new SplitText(".aboutdescription1, .aboutdescription2", {type: "words"});
 
 const illustrationtitle = new SplitText(".illustrationstitle", {
     type: "chars"
@@ -36,7 +38,7 @@ const khankotdesc = new SplitText(".khankottextdesc", {
 });
 
 
-const deeptitle = new SplitText(".deeperlooktitle, .butterflytitleX", {
+const deeptitle = new SplitText(".deeperlooktitle", {
     type: "chars"
 });
 
@@ -58,15 +60,15 @@ const fireworktitle = new SplitText(".fireworkgirltitLe", {
     type: "chars"
 });
 const traingirltitle = new SplitText(".traingirltitle", {
-    type: "chars"
+    type: "words"
 });
 
 
 const visualTitle = new SplitText(".visualtitle", {type: "chars"});
-const visualDetail = new SplitText(".visualdetail", {type: "chars"});
+const visualDetail = new SplitText(".visualdetail", {type: "words"});
 
 const backgroundsTitle = new SplitText(".backgroundstitle", {type: "chars"});
-const bgText = new SplitText(".bgtext", {type: "chars"});
+const bgText = new SplitText(".bgtext", {type: "words"});
 
 const animationsTitle = new SplitText(".animationstitle", {type: "chars"});
 const workflowTitle = new SplitText(".workflowtitle", {type: "words"});
@@ -82,6 +84,10 @@ const contactItems = new SplitText(".contactitem h2, .contactitem h3", {type: "c
 
 const animationreelTitle = new SplitText(".animationreeltitle", {type: "chars"});
 
+
+
+mm.add("(min-width: 768px", () =>{
+    //desktop 
 
 // homeimg
 gsap.from(
@@ -167,19 +173,7 @@ gsap.to(".masked3", {
     }
 });
 
-//khankot
-gsap.from(".standingmanimg", {
-    // y: -20,
-    scale: 1.1,
-       opacity:0,
-    // rotation: -2,
-     scrollTrigger: {
-        trigger:".khankot",
-        scrub: true,
-        start: "top 20%",
-        end: "top -30%"
-    }
-});
+
 
 //buterfly
 gsap.from(".butterflyimg", {
@@ -221,92 +215,6 @@ gsap.from(".paintedeyeimg", {
     }
 });
 
-
-// gsap.from(".fireworkgirlimg", {
-//     y: 40,
-//     // scale: 1.1,
-//     //    opacity:0,
-//     // rotation: -2,
-//      scrollTrigger: {
-//         trigger:".fireworkgirlimg",
-//         scrub: true,
-//         start: "top 60%",
-//         end: "top 10%"
-//     }
-// });
-
-// gsap.to(".fireworkgirlimg", {
-//     x: -40,
-//     // scale: 1.1,
-//        opacity:0,
-//     // rotation: -2,
-//      scrollTrigger: {
-//         trigger:".fireworkgirlimg",
-//         scrub: true,
-//         start: "top 2%",
-//         // end: "top 5%"
-//     }
-// });
-
-// gsap.from(" .fireworkbluever ", {
-//     y: 40,
-//     // scale: 1.5,
-//        opacity:0,
-//     // rotation: -2,
-//     stagger: 1,
-//     duration:2,
-//      scrollTrigger: {
-//         trigger:".fireworkbluever",
-//         scrub: true,
-// //         start: "top 85%",
-// //         end: "top 28%"
-// //     }
-// // });
-
-// gsap.from(".fireworkogver", {
-//     x: 40,
-//     // scale: 0.9,
-//        opacity:0,
-//     // rotation: -2,
-//     // stagger: 1,
-//     duration:0.15,
-//      scrollTrigger: {
-//         trigger:".fireworkogver",
-//         scrub: true,
-//         start: "top 85%",
-//         end: "top 50%"
-//     }
-// });
-
-// gsap.from(".fireworkfishver", {
-//     x: 50,
-//     // scale: 1.5,
-//        opacity:0,
-//     // rotation: -2,
-//     stagger: 1,
-//     duration:2,
-//      scrollTrigger: {
-//         trigger:".fireworkfishver",
-//         scrub: true,
-//         start: "top 85%",
-//         end: "top 55%"
-//     }
-// });
-
-
-// gsap.from(".ianimg", {
-//     y: 10,
-//     // scale: 1.1,
-//        opacity:0,
-//     // rotation: -2,
-//      scrollTrigger: {
-//         trigger:".ianimg",
-//         scrub: true,
-//         start: "top 90%",
-//         end: "top 80%"
-//     }
-// });
-
 gsap.from(".trainface", {
     y: 70,
     // scale: 1.1,
@@ -320,31 +228,7 @@ gsap.from(".trainface", {
     }
 });
 
-gsap.from(".yellowface", {
-    y: 70,
-    // scale: 1.1,
-    //    opacity:0,
-    // rotation: -2,
-     scrollTrigger: {
-        trigger:".yellowface",
-        scrub: true,
-        start: "top 70%",
-        end: "top 10%"
-    }
-});
 
-gsap.from(".halffacebk", {
-    x: -70,
-    // scale: 1.1,
-    //    opacity:0,
-    // rotation: -2,
-     scrollTrigger: {
-        trigger:".halffacebk",
-        scrub: true,
-        start: "top 70%",
-        end: "top 10%"
-    }
-});
 
 gsap.from(".rocksimg", {
     y: 90,
@@ -384,6 +268,36 @@ gsap.from(".homebgimg", {
         end: "top 30%"
     }
 });
+
+
+
+gsap.from(".yellowface", {
+    y: 70,
+    // scale: 1.1,
+    //    opacity:0,
+    // rotation: -2,
+     scrollTrigger: {
+        trigger:".yellowface",
+        scrub: true,
+        start: "top 70%",
+        end: "top 10%"
+    }
+});
+
+gsap.from(".halffacebk", {
+    x: -70,
+    // scale: 1.1,
+    //    opacity:0,
+    // rotation: -2,
+     scrollTrigger: {
+        trigger:".halffacebk",
+        scrub: true,
+        start: "top 70%",
+        end: "top 10%"
+    }
+});
+
+
 
 gsap.from(".fieldimg", {
     y: 70,
@@ -573,6 +487,37 @@ gsap.from(".doorknobimg", {
     }
     
 });
+    //titles
+
+
+    //animations
+
+});
+
+//desktop end
+
+
+//khankot
+gsap.from(".standingmanimg", {
+    // y: -20,
+    scale: 1.1,
+       opacity:0,
+    // rotation: -2,
+     scrollTrigger: {
+        trigger:".khankot",
+        scrub: true,
+        start: "top 20%",
+        end: "top -30%"
+    }
+
+    
+    
+});
+
+
+
+
+
 
 // gsap.from(".carimg, .doorsidewayimg", {
 //     y: 70,
@@ -663,7 +608,7 @@ gsap.from(homeTitle.chars, {
     duration: 0.5
 });
 
-gsap.from(homeDescription.chars, {
+gsap.from(homeDescription.words, {
     x: -90,
     opacity: 0,
     duration: 1,
@@ -688,7 +633,7 @@ gsap.from(aboutTitle.chars, {
     }
 });
 
-gsap.from(aboutdesc.chars, {
+gsap.from(aboutdesc.words, {
     y: 120,
     opacity: 0,
     stagger: 0.05,
@@ -845,7 +790,7 @@ gsap.from(traingirltitle.chars, {
     }
 });
 
-gsap.from(visualTitle.chars, {
+gsap.from(visualTitle.words, {
     x: 120,
     opacity: 0,
     stagger: 0.04,
@@ -859,7 +804,7 @@ gsap.from(visualTitle.chars, {
     }
 });
 
-gsap.from(visualDetail.chars, {
+gsap.from(visualDetail.words, {
     y: 40,
     opacity: 0,
     stagger: 0.015,
@@ -887,7 +832,7 @@ gsap.from(backgroundsTitle.chars, {
     }
 });
 
-gsap.from(bgText.chars, {
+gsap.from(bgText.words, {
     y: 60,
     opacity: 0,
     stagger: 0.025,
