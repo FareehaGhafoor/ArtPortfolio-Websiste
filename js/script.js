@@ -931,4 +931,15 @@ gsap.from(contactItems.chars, {
     }
 });
 
+console.log("MENU TEST");
 
+const menuIcon = document.querySelector(".menuicon");
+const mobileMenu = document.querySelector(".mobilemenu");
+
+console.log(menuIcon);
+console.log(mobileMenu);
+
+menuIcon.addEventListener("click", function () {
+    console.log("MENU CLICKED");
+    mobileMenu.classList.toggle("show");
+});
